@@ -6,6 +6,8 @@
   "scripts": {
     "example:search": "node examples/search-contacts.js",
     "example:create": "node examples/create-contact.js",
+    "example:sms": "node examples/send-sms.js",
+    "example:email": "node examples/send-email.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -306,6 +306,14 @@ npm run example:search -- --status=0 --debug
 
 # Create a contact with notes and calls
 npm run example:create
+
+# Send SMS to a contact
+npm run example:sms -- 12345 "Hi! Just checking in about your property search."
+npm run example:sms -- --search-email=john@example.com "New listings available!"
+
+# Send email to a contact
+npm run example:email -- 12345 "New Listings" "Check out these properties..."
+npm run example:email -- --search-email=john@example.com "Follow Up" "Thanks for your interest!"
 ```
 
 ### Example: Search and Update Contacts
@@ -423,7 +431,9 @@ kvcore-client/
 │       └── misc.js         # Miscellaneous endpoints
 ├── examples/
 │   ├── search-contacts.js  # CLI search example
-│   └── create-contact.js   # Create contact example
+│   ├── create-contact.js   # Create contact example
+│   ├── send-sms.js         # Send SMS example
+│   └── send-email.js       # Send email example
 ├── constants.js            # API constants and enumerations
 ├── index.js                # Main entry point
 ├── package.json
