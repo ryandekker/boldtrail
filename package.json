@@ -8,6 +8,7 @@
     "example:create": "node examples/create-contact.js",
     "example:sms": "node examples/send-sms.js",
     "example:email": "node examples/send-email.js",
+    "example:verify": "node examples/verify-token.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
